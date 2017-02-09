@@ -4,8 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var art={
-    one={title:'article one',
+var one={title:'article one',
     head:'one',
     date:'feb 8th',
     content:
@@ -13,22 +12,43 @@ var art={
             'this is the first article of my web page'
         </p>`
     }
-    two={title'article two',
-    head:'two',
-    date:'feb 8th',
-    content:
-            `<p> 
-            'this is the second article of my web page'
-            </p>`}
-    three={title'article three',
-    head:'three',
-    date:'feb 8th',
-    content:
-            `<p> 
-            'this is the third article of my web page'
-            </p>`}
-        } 
+    
 function createtemplate(data) {
+    var title=data.title;
+    var date=date.date;
+    var head=data.head;
+    var content=data.content;
+    var htmltemplate=
+    `<html>
+        <head> 
+             <title>
+                          chaand webpage
+             </title>
+                       <meta name="vi export" content="width-device-width,initial-scale-1"/>
+                       <link href="/ui/style.css" rel="stylesheet" />
+        </head>
+               <body>
+                   <div class="never">
+            
+            <div >
+                 <a href="/">home page</a>
+            </div>
+            <hr/>
+            <h1>
+              first webpage
+            </h1>
+            <div>
+            feb 8th ceated
+            </div>
+            <div>
+            <p> 
+            this is the first article of my web page
+            </p>
+            </div>
+        </div>
+              </body>
+</html>`
+
     
 }   
 
