@@ -22,7 +22,7 @@ function createtemplate(data) {
     `<html>
         <head> 
              <title>
-                          ${itle}
+                          ${title}
              </title>
                        <meta name="vi export" content="width-device-width,initial-scale-1"/>
                        <link href="/ui/style.css" rel="stylesheet" />
