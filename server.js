@@ -22,7 +22,7 @@ function createtemplate(data) {
     `<html>
         <head> 
              <title>
-                          chaand webpage
+                          ${itle}
              </title>
                        <meta name="vi export" content="width-device-width,initial-scale-1"/>
                        <link href="/ui/style.css" rel="stylesheet" />
@@ -35,14 +35,14 @@ function createtemplate(data) {
             </div>
             <hr/>
             <h1>
-              first webpage
+              ${head}
             </h1>
             <div>
-            feb 8th ceated
+            ${date}
             </div>
             <div>
             <p> 
-            this is the first article of my web page
+            ${content}
             </p>
             </div>
         </div>
