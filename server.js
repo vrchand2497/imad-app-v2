@@ -4,22 +4,22 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var arts={
-         `article-one`:{title:'article one',
+var art={
+         'article-one':{title:'article one',
     head:'one',
     date:'feb 8th',
     content:
         `<p> 
             'this is the first article of my web page'
         </p>`},
-         `article-two`:{title:'article two',
+         'article-two':{title:'article two',
     head:'two',
     date:'feb 8th',
     content:
         `<p> 
             'this is the first article of my web page'
         </p>`},
-        `article-three`:{title:'article three',
+        'article-three':{title:'article three',
     head:'one',
     date:'feb 8th',
     content:
