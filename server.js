@@ -72,12 +72,13 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/one', function (req, res) {
-  res.send(create template(one))
+  res.send(createtemplate(one))
 });
 app.get('/two', function (req, res) {
-  res.send(create template(two));
-});app.get('/three', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'three.html'));
+  res.send(createtemplate(two));
+});
+app.get('/three', function (req, res) {
+  res.send(createtemplate(three));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
