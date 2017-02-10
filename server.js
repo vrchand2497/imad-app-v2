@@ -5,21 +5,21 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var arts={
-        var one:{title:'article one',
+         one:{title:'article one',
     head:'one',
     date:'feb 8th',
     content:
         `<p> 
             'this is the first article of my web page'
         </p>`},
-        var two:{title:'article two',
+         two:{title:'article two',
     head:'two',
     date:'feb 8th',
     content:
         `<p> 
             'this is the first article of my web page'
         </p>`},
-        var three:{title:'article three',
+        three:{title:'article three',
     head:'one',
     date:'feb 8th',
     content:
