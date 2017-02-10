@@ -31,7 +31,7 @@ var articles={
     
 function createtemplate(data) {
     var title=data.title;
-    var date=date.date;
+    var date=data.date;
     var head=data.head;
     var content=data.content;
     var htmltemplate=
