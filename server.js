@@ -5,21 +5,21 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var arts={
-         one:{title:'article one',
+         `article-one`:{title:'article one',
     head:'one',
     date:'feb 8th',
     content:
         `<p> 
             'this is the first article of my web page'
         </p>`},
-         two:{title:'article two',
+         `article-two`:{title:'article two',
     head:'two',
     date:'feb 8th',
     content:
         `<p> 
             'this is the first article of my web page'
         </p>`},
-        three:{title:'article three',
+        `article-three`:{title:'article three',
     head:'one',
     date:'feb 8th',
     content:
@@ -71,15 +71,10 @@ function createtemplate(data) {
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/one', function (req, res) {
-  res.send(createtemplate(one))
+app.get('/article-name', function (req, res) {
+  res.send(createtemplate art(article-name))
 });
-app.get('/two', function (req, res) {
-  res.send(createtemplate(two));
-});
-app.get('/three', function (req, res) {
-  res.send(createtemplate(three));
-});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
