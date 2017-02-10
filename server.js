@@ -19,7 +19,7 @@ var art={
         `<p> 
             'this is the first article of my web page'
         </p>`}
-        var one={title:'article one',
+        var three={title:'article three',
     head:'one',
     date:'feb 8th',
     content:
@@ -65,14 +65,14 @@ function createtemplate(data) {
               </body>
 </html>`
 
-    
+ return htmltemplate   
 }   
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'one.html'));
+  res.send(create template(one))
 });
 app.get('/two', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'two.html'));
