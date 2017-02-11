@@ -30,7 +30,7 @@ var articles={
     };
     
 function createtemplate(data) {
-    var title=data.title;
+    //var title=data.title;
     var date=data.date;
     var head=data.head;
     var content=data.content;
