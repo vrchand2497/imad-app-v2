@@ -9,7 +9,7 @@ var articles={
     head:'one',
     date:'feb 8th',
     content:
-        `<p> 
+        `<p>  
             'this is the first article of my web page'
         </p>`},
          'article-two':{title:'article two',
@@ -30,7 +30,7 @@ var articles={
     };
     
 function createtemplate(data) {
-    //var title=data.title;
+    var title=data.title;
     var date=data.date;
     var head=data.head;
     var content=data.content;
@@ -38,7 +38,7 @@ function createtemplate(data) {
     `<html>
         <head> 
              <title>
-                          ${title}
+                          {title}
              </title>
                        <meta name="viewport" content="width=device-width,initial-scale-1"/>
                        <link href="/ui/style.css" rel="stylesheet" />
