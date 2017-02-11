@@ -40,28 +40,28 @@ function createtemplate(data) {
              <title>
                           ${title}
              </title>
-                       <meta name="vi ewport" content="width=device-width,initial-scale-1"/>
+                       <meta name="viewport" content="width=device-width,initial-scale-1"/>
                        <link href="/ui/style.css" rel="stylesheet" />
         </head>
                <body>
-                   <div class="never">
+                    <div class="never">
             
-            <div >
-                 <a href="/">home page</a>
-            </div>
-            <hr/>
-            <h1>
-              ${head}
-            </h1>
-            <div>
-            ${date}
-            </div>
-            <div>
-            <p> 
-            ${content}
-            </p>
-            </div>
-        </div>
+                     <div >
+                     <a href="/">home page</a>
+                     </div>
+                     <hr/>
+                     <h1>
+                     ${head}
+                      </h1>
+                      <div>
+                      ${date}
+                      </div>
+                     <div>
+                     <p> 
+                     ${content}
+                     </p>
+                     </div>
+                    </div>
               </body>
     </html>` ;         
  return htmltemplate;
