@@ -2,9 +2,10 @@ console.log('Loaded!');
 var element=document.getElementById('main-text');
 element.innerHTML="new";
 var element=document.getElementById('madi');
-marginLeft=0;function{
+var marginLeft=0;function moveLeft{
 marginLeft=marginLeft+10;
-    img.style.marginLeft=marginLeft+'px'};
+    img.style.marginLeft=marginLeft+'px';}
+    
 img.oneclick=function ()
 {
     
