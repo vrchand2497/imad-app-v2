@@ -4,7 +4,7 @@ button.onclick=function ()
 {var request= new XMLHttpRequest();
 Request.onreadystatechange = function(){
     if(request.readystate===XMLHttpRequest.DONE)
-    if(request.state===200){
+    if(request.status===200){
        var counter= request.responseText;
     }
 };
