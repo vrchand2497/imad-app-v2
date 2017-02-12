@@ -8,7 +8,9 @@ Request.onreadystatechange = function(){
        var counter= request.responseText;
     }
 };
-  counter=counter+1;
+  request.open('GET','http://vrchand2497.imad.hasura-app.io/counter',true);
+  request.send(null);
+  
   
    
 };
