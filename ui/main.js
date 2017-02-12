@@ -3,7 +3,7 @@ var element=document.getElementById('main-text');
 element.innerHTML="new";
 var element=document.getElementById('madi');
 marginLeft=0;
-img.onclick=function moveLeft()
+img.oneclick=function moveLeft()
 {
     marginLeft=marginLeft+10;
     img.style.marginLeft=marginLeft+'px'
