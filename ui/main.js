@@ -15,7 +15,7 @@ Request.onreadystatechange = function(){
         
     }
 };
-  request.open('GET','http://v.r.chand97.imad.hasura-app.io/counter',true);
+  request.open('GET','http://vrchand97.imad.hasura-app.io/counter',true);
   request.send(null);
   
   
