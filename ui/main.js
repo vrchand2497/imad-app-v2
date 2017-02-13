@@ -7,7 +7,7 @@ Request.onreadystatechange = function(){
     if(request.status===200){
        var counter= request.responseText;
        var  span=document.getElementById('count');
-       span.innerHTML=counter.tostring();
+       span.innerHTML=counter.toString();
     }}
 };
   request.open('GET','http://vrchand2497.imad.hasura-app.io/counter',true);
