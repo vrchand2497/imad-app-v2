@@ -15,7 +15,7 @@ button.onclick=function ()
         
     }
 };
-  request.open('GET','http://vrchand2497.imad.hasura-app.io/counter',true);
+  request.open('GET','http://vrchand2497.imad.hasura-app.io/c',true);
   request.send(null);
   
   
