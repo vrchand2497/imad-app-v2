@@ -71,7 +71,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 var counter=0;
-app.get('/C/counter', function (req, res) {
+app.get('/c/counter', function (req, res) {
     counter=counter+1;
   res.send(counter.toString());
 });
