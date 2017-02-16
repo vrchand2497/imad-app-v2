@@ -24,7 +24,7 @@ request.onreadystatechange = function ()
 request.open('GET','http://vrchand2497.imad.hasura-app.io/counter',true);
 request.send(null);
 };
-var name=document.getElementById('name');
+var nameInput=document.getElementById('name');
 var name=nameInput.value;
 var submit=document.getElementById('submit button');
 sumbit.onclick=function(){
