@@ -37,7 +37,7 @@ request.onreadystatechange = function ()
         if(request.status === 200)
         {
           var names =request.responseText;
-          names=JSON.parse();
+          names=JSON.parse(names);
 
         }
     }
